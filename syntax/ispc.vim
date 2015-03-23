@@ -11,13 +11,13 @@ endif
 runtime! syntax/c.vim
 unlet b:current_syntax
 
-syn keyword	ispcStatement cbreak ccontinue creturn launch print reference soa sync new delete unmasked
-syn keyword	ispcConditional cif
-syn keyword	ispcRepeat cdo cfor cwhile foreach foreach_unique foreach_active foreach_tiled
-syn keyword	ispcBuiltin programCount programIndex
+syn keyword ispcStatement cbreak ccontinue creturn launch print reference soa sync new delete unmasked
+syn keyword ispcConditional cif
+syn keyword ispcRepeat cdo cfor cwhile foreach foreach_unique foreach_active foreach_tiled
+syn keyword ispcBuiltin programCount programIndex
 syn keyword ispcStorageClass export uniform varying task
-syn keyword	ispcType int8 int16 int32 int64
-syn keyword	ispcOperator operator in
+syn keyword ispcType int8 int16 int32 int64
+syn keyword ispcOperator operator in
 syn keyword ispcDefine ISPC ISPC_POINTER_SIZE ISPC_MAJOR_VERSION ISPC_MINOR_VERSION
 			\ ISPC_TARGET_NEON_8 ISPC_TARGET_NEON_16 ISPC_TARGET_NEON_3
 			\ ISPC_TARGET_SSE2 ISPC_TARGET_SSE4 ISPC_TARGET_AVX
