@@ -18,10 +18,11 @@ syn keyword	ispcBuiltin programCount programIndex
 syn keyword ispcStorageClass export uniform varying task
 syn keyword	ispcType int8 int16 int32 int64
 syn keyword	ispcOperator operator in
-syn keyword ispcDefine ISPC ISPC_POINTER_SIZE ISPC_MAJOR_VERSION ISPC_MINOR_VERSION PI
+syn keyword ispcDefine ISPC ISPC_POINTER_SIZE ISPC_MAJOR_VERSION ISPC_MINOR_VERSION
 			\ ISPC_TARGET_NEON_8 ISPC_TARGET_NEON_16 ISPC_TARGET_NEON_3
 			\ ISPC_TARGET_SSE2 ISPC_TARGET_SSE4 ISPC_TARGET_AVX
 			\ ISPC_TARGET_AVX11 ISPC_TARGET_AVX2 ISPC_TARGET_GENERIC
+syn keyword Float PI
 
 hi def link ispcStatement Statement
 hi def link ispcConditional Conditional
@@ -31,6 +32,7 @@ hi def link ispcStorageClass StorageClass
 hi def link ispcType Type
 hi def link ispcOperator Operator
 hi def link ispcDefine Define
+hi def link ispcKeyword PI
 
 let b:current_syntax = "ispc"
 
