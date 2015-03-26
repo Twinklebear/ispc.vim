@@ -4,7 +4,7 @@
 " Last Change: March 22, 2015
 
 if exists("b:current_syntax")
-  finish
+	finish
 endif
 
 " ISPC is C syntax with some addons, so start there

@@ -6,16 +6,13 @@
 if exists("b:did_indent")
 	finish
 endif
-let b:did_indent = 1
 
 setlocal cindent
 setlocal cinwords+=foreach_active,foreach_unique,foreach,foreach_tiled,cif,cfor,cwhile,cdo
 
 setlocal autoindent
-setlocal indentexpr=GetISPCIndent(v:lnum)
+" ISPC indents like C, so just do that
+setlocal indentexpr=cindent(v:lnum)
 
-function GetISPCIndent(lnum)
-	" ISPC indents like C, so just do that
-	return cindent(a:lnum)
-endfunction
+let b:did_indent = 1
 
