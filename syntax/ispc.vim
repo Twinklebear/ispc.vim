@@ -14,7 +14,8 @@ unlet b:current_syntax
 syn keyword ispcStatement cbreak ccontinue creturn launch print reference soa sync new delete unmasked
 syn keyword ispcConditional cif
 syn keyword ispcRepeat cdo cfor cwhile foreach foreach_unique foreach_active foreach_tiled
-syn keyword ispcBuiltin programCount programIndex
+syn keyword ispcBuiltin programCount programIndex threadIndex threadCount taskIndex0 taskIndex1
+			\ taskIndex2 taskCount0 taskCount1 taskCount2
 syn keyword ispcStorageClass export uniform varying task
 syn keyword ispcType int8 int16 int32 int64
 syn keyword ispcOperator operator in
